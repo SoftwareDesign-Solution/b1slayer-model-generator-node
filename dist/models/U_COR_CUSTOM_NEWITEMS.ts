@@ -1,0 +1,33 @@
+export type U_COR_CUSTOM_NEWITEMS = {
+	Code: string;
+	Name: string | null;
+	U_Active: string | null;
+	U_RuleName: string | null;
+	U_FormType: string | null;
+	U_ItemUID: string | null;
+	U_Description: string | null;
+	U_DescLength: string | null;
+	U_Source: string | null;
+	U_Alias: string | null;
+	U_Left: string | null;
+	U_Top: string | null;
+	U_Width: string | null;
+	U_Height: string | null;
+	U_From_pane: string | null;
+	U_To_pane: string | null;
+	U_AffFormMode: string | null;
+	U_Invisible: string | null;
+	U_Disabled: string | null;
+	U_ItemType: string | null;
+	U_LinkedObjType: string | null;
+	U_Query: string | null;
+	U_TabOrder: string | null;
+	U_RefItem: string | null;
+	U_Creator: string | null;
+	U_LastModified: string | null;
+	U_LastModifiedBy: string | null;
+	U_Permission: string | null;
+	U_DeletedF: string | null;
+	U_RuleId: string | null;
+	U_Version: number | null;
+}

@@ -1,0 +1,48 @@
+import type { BoYesNoEnum } from "./BoYesNoEnum";
+import type { LinkedDocTypeEnum } from "./LinkedDocTypeEnum";
+import type { CampaignAssignToEnum } from "./CampaignAssignToEnum";
+
+export type CampaignBusinessPartner = {
+	CampaignNumber: number | null;
+	CampaignLineNumber: number | null;
+	BPCode: string | null;
+	BPName: string | null;
+	BPGroupName: string | null;
+	BPIndustryName: string | null;
+	BPStatus: string | null;
+	ContactCode: string | null;
+	ContactTitle: string | null;
+	ContactPosition: string | null;
+	ContactEmail: string | null;
+	ContactTelephone: string | null;
+	ContactMobile: string | null;
+	ContactFax: string | null;
+	ContactAddress: string | null;
+	Response: BoYesNoEnum | null;
+	RelatedSalesOpportunity: number | null;
+	Street: string | null;
+	Block: string | null;
+	City: string | null;
+	ZipCode: string | null;
+	County: string | null;
+	State: string | null;
+	Country: string | null;
+	Building: string | null;
+	DocType: LinkedDocTypeEnum | null;
+	IsShowLinkedDoc: BoYesNoEnum | null;
+	DocNumber: number | null;
+	DocEntry: number | null;
+	FirstName: string | null;
+	MiddleName: string | null;
+	LastName: string | null;
+	AddressID: string | null;
+	AddressType: string | null;
+	AddressName2: string | null;
+	AddressName3: string | null;
+	FederalTaxID: string | null;
+	StreetNo: string | null;
+	CreateActivity: BoYesNoEnum | null;
+	AssignTo: CampaignAssignToEnum | null;
+	AssignName: number | null;
+	ResponseType: string | null;
+}

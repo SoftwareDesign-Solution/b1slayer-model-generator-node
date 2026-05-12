@@ -1,0 +1,48 @@
+import type { ProjectTypeEnum } from "./ProjectTypeEnum";
+import type { BoYesNoEnum } from "./BoYesNoEnum";
+import type { ProjectStatusTypeEnum } from "./ProjectStatusTypeEnum";
+import type { RiskLevelTypeEnum } from "./RiskLevelTypeEnum";
+import type { PM_StageData } from "./PM_StageData";
+import type { PM_OpenIssueData } from "./PM_OpenIssueData";
+import type { PM_DocumentData } from "./PM_DocumentData";
+import type { PM_ActivityData } from "./PM_ActivityData";
+import type { PM_WorkOrderData } from "./PM_WorkOrderData";
+import type { PM_SummaryData } from "./PM_SummaryData";
+import type { PM_DocAttachement } from "./PM_DocAttachement";
+import type { PM_StageAttachement } from "./PM_StageAttachement";
+
+export type PM_ProjectDocumentData = {
+	AbsEntry: number;
+	Owner: number | null;
+	ProjectName: string | null;
+	StartDate: Date | null;
+	FinishedPercent: number | null;
+	DocNum: number | null;
+	Series: number | null;
+	ProjectType: ProjectTypeEnum | null;
+	BusinessPartner: string | null;
+	BusinessPartnerName: string | null;
+	ContactPerson: number | null;
+	Territory: number | null;
+	SalesEmployee: number | null;
+	AllowSubprojects: BoYesNoEnum | null;
+	ProjectStatus: ProjectStatusTypeEnum | null;
+	DueDate: Date | null;
+	ClosingDate: Date | null;
+	FinancialProject: string | null;
+	RiskLevel: RiskLevelTypeEnum | null;
+	Industry: number | null;
+	Reason: string | null;
+	AttachmentEntry: number | null;
+	U_CKSDMSID: number | null;
+	U_CKSDMSFILEID: number | null;
+	U_CKSDMSPRINTGUID: string | null;
+	PM_StagesCollection: PM_StageData[] | null;
+	PM_OpenIssuesCollection: PM_OpenIssueData[] | null;
+	PM_DocumentsCollection: PM_DocumentData[] | null;
+	PM_ActivitiesCollection: PM_ActivityData[] | null;
+	PM_WorkOrdersCollection: PM_WorkOrderData[] | null;
+	PM_SummaryData: PM_SummaryData | null;
+	PM_DocAttachements: PM_DocAttachement[] | null;
+	PM_StageAttachements: PM_StageAttachement[] | null;
+}

@@ -1,0 +1,40 @@
+import type { BoYesNoEnum } from "./BoYesNoEnum";
+import type { InventoryOpeningBalanceSerialNumber } from "./InventoryOpeningBalanceSerialNumber";
+import type { InventoryOpeningBalanceBatchNumber } from "./InventoryOpeningBalanceBatchNumber";
+import type { InventoryOpeningBalanceCCDNumber } from "./InventoryOpeningBalanceCCDNumber";
+
+export type InventoryOpeningBalanceLine = {
+	DocumentEntry: number | null;
+	LineNumber: number | null;
+	ItemCode: string | null;
+	ItemDescription: string | null;
+	WarehouseCode: string | null;
+	BinEntry: number | null;
+	InWarehouseQuantity: number | null;
+	OpeningBalance: number | null;
+	Remarks: string | null;
+	BarCode: string | null;
+	VisualOrder: number | null;
+	Price: number | null;
+	Total: number | null;
+	OpenInventoryAccount: string | null;
+	ProjectCode: string | null;
+	Manufacturer: number | null;
+	SupplierCatalogNo: string | null;
+	CostingCode: string | null;
+	CostingCode2: string | null;
+	CostingCode3: string | null;
+	CostingCode4: string | null;
+	CostingCode5: string | null;
+	PreferredVendor: string | null;
+	Currency: string | null;
+	AllowBinNegativeQuantity: BoYesNoEnum | null;
+	ActualPrice: number | null;
+	PostedValueLC: number | null;
+	PostedValueSC: number | null;
+	WeightOfRecycledPlastic: number | null;
+	PlasticPackageExemptionReason: string | null;
+	InventoryOpeningBalanceSerialNumbers: InventoryOpeningBalanceSerialNumber[] | null;
+	InventoryOpeningBalanceBatchNumbers: InventoryOpeningBalanceBatchNumber[] | null;
+	InventoryOpeningBalanceCCDNumbers: InventoryOpeningBalanceCCDNumber[] | null;
+}

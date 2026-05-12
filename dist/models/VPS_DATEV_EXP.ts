@@ -1,0 +1,44 @@
+import type { VPS_DATEV_EXPL } from "./VPS_DATEV_EXPL";
+import type { VPS_DATEV_EXPF } from "./VPS_DATEV_EXPF";
+import type { VPS_DATEV_EXPR } from "./VPS_DATEV_EXPR";
+
+export type VPS_DATEV_EXP = {
+	DocNum: number | null;
+	Period: number | null;
+	Instance: number | null;
+	Series: number | null;
+	Handwrtten: string | null;
+	Status: string | null;
+	RequestStatus: string | null;
+	Creator: string | null;
+	Remark: string | null;
+	DocEntry: number;
+	Canceled: string | null;
+	Object: string | null;
+	LogInst: number | null;
+	UserSign: number | null;
+	Transfered: string | null;
+	CreateDate: Date | null;
+	CreateTime: TimeOfDay | null;
+	UpdateDate: Date | null;
+	UpdateTime: TimeOfDay | null;
+	DataSource: string | null;
+	U_EXPPATH: string;
+	U_BERNAME: string;
+	U_BERNR: number;
+	U_COMPID: number;
+	U_ERFKZ: string | null;
+	U_EXPKD: string;
+	U_EXPACC: string;
+	U_EXPPYM: string;
+	U_DATEF: Date;
+	U_DATET: Date;
+	U_DATETYPE: string;
+	U_EXPJEYTPE: string;
+	U_EXPOLD: string;
+	U_EXPTYPE: string;
+	U_RESULT: string;
+	VPS_DATEV_EXPLCollection: VPS_DATEV_EXPL[] | null;
+	VPS_DATEV_EXPFCollection: VPS_DATEV_EXPF[] | null;
+	VPS_DATEV_EXPRCollection: VPS_DATEV_EXPR[] | null;
+}

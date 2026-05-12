@@ -1,0 +1,47 @@
+import type { AssetDocumentStatusEnum } from "./AssetDocumentStatusEnum";
+import type { AssetDocumentTypeEnum } from "./AssetDocumentTypeEnum";
+import type { BoYesNoEnum } from "./BoYesNoEnum";
+import type { ClosingOptionEnum } from "./ClosingOptionEnum";
+import type { AssetOriginalTypeEnum } from "./AssetOriginalTypeEnum";
+import type { AssetDocumentLine } from "./AssetDocumentLine";
+import type { AssetDocumentAreaJournal } from "./AssetDocumentAreaJournal";
+import type { AssetDocumentNewLoc } from "./AssetDocumentNewLoc";
+
+export type AssetDocument = {
+	DocEntry: number;
+	DocNum: number | null;
+	Series: number | null;
+	PostingDate: Date | null;
+	DocumentDate: Date | null;
+	Status: AssetDocumentStatusEnum | null;
+	Remarks: string | null;
+	Reference: string | null;
+	Currency: string | null;
+	DocumentRate: number | null;
+	DocumentTotal: number | null;
+	DocumentTotalFC: number | null;
+	DocumentTotalSC: number | null;
+	AssetValueDate: Date | null;
+	DocumentType: AssetDocumentTypeEnum | null;
+	SummerizeByProjects: BoYesNoEnum | null;
+	SummerizeByDistributionRules: BoYesNoEnum | null;
+	ManualDepreciationType: string | null;
+	HandWritten: BoYesNoEnum | null;
+	CancellationDate: Date | null;
+	DepreciationArea: string | null;
+	BPLId: number | null;
+	Origin: number | null;
+	LowValueAssetRetirement: BoYesNoEnum | null;
+	CancellationOption: ClosingOptionEnum | null;
+	OriginalType: AssetOriginalTypeEnum | null;
+	BaseReference: string | null;
+	BPLName: string | null;
+	VATRegNum: string | null;
+	AssetDocumentLineCollection: AssetDocumentLine[] | null;
+	AssetDocumentAreaJournalCollection: AssetDocumentAreaJournal[] | null;
+	PTICode: string | null;
+	Letter: string | null;
+	FolNumFrom: number | null;
+	FolNumTo: number | null;
+	AssetDocumentNewLocCollection: AssetDocumentNewLoc[] | null;
+}

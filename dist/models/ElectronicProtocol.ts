@@ -1,0 +1,45 @@
+import type { ElectronicDocProtocolCodeEnum } from "./ElectronicDocProtocolCodeEnum";
+import type { ElectronicDocGenTypeEnum } from "./ElectronicDocGenTypeEnum";
+import type { BoYesNoEnum } from "./BoYesNoEnum";
+import type { RelatedDocument } from "./RelatedDocument";
+
+export type ElectronicProtocol = {
+	ProtocolCode: ElectronicDocProtocolCodeEnum | null;
+	GenerationType: ElectronicDocGenTypeEnum | null;
+	MappingID: number | null;
+	TestingMode: BoYesNoEnum | null;
+	Confirmation: string | null;
+	EDocType: number | null;
+	CFDiCancellationReason: string | null;
+	CFDiCancellationResponse: string | null;
+	RelatedDocuments: RelatedDocument[] | null;
+	EBooksRelevant: BoYesNoEnum | null;
+	EBooksMARK: string | null;
+	EBooksMARKofNegative: string | null;
+	EBooksInvoiceType: string | null;
+	EBooksInvoiceTypeofNegative: string | null;
+	EBillingIRN: string | null;
+	EETPKP: string | null;
+	EETBKP: string | null;
+	SignatureInputMessage: string | null;
+	SignatureDigest: string | null;
+	FechaTimbrado: string | null;
+	SelloSAT: string | null;
+	PaymentMethod: string | null;
+	RfcProvCertif: string | null;
+	NoCertificadoSAT: string | null;
+	FPASequenceNumber: number | null;
+	FPASendDateSDI: Date | null;
+	FPAProgressivo: string | null;
+	ProtocolDescription: string | null;
+	CFDiExport: string | null;
+	EBillingAckNo: string | null;
+	EBillingAckDt: string | null;
+	EBillingSignedInvoice: string | null;
+	EBillingSignedQRCode: string | null;
+	EBillingResponseStatus: string | null;
+	CFDiCancellationReference: string | null;
+	EBooksQRCodePath: string | null;
+	EBooksQRCodePathofNegative: string | null;
+	CartaPorteID: string | null;
+}

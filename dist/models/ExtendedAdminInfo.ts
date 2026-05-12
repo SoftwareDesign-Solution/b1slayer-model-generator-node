@@ -1,0 +1,43 @@
+import type { BoYesNoEnum } from "./BoYesNoEnum";
+import type { DocumentRemarksIncludeTypeEnum } from "./DocumentRemarksIncludeTypeEnum";
+
+export type ExtendedAdminInfo = {
+	AddressType: string | null;
+	StreetNo: string | null;
+	STDCode: number | null;
+	STDCodeForeign: number | null;
+	NatureOfCompanyCode: number | null;
+	EconomicActivityTypeCode: number | null;
+	CreditContributionOriginCode: string | null;
+	IPIPeriodCode: string | null;
+	CooperativeAssociationTypeCode: number | null;
+	ProfitTaxationCode: number | null;
+	CompanyQualificationCode: number | null;
+	DeclarerTypeCode: number | null;
+	IPITaxContributor: BoYesNoEnum | null;
+	CommercialRegister: string | null;
+	DateOfIncorporation: Date | null;
+	SPEDProfile: string | null;
+	EnvironmentType: number | null;
+	Opting4ICMS: BoYesNoEnum | null;
+	OKDPNumber: string | null;
+	GlobalLocationNumber: string | null;
+	EnableIntrastat: BoYesNoEnum | null;
+	AuthorityUser: string | null;
+	AuthorityPassword: string | null;
+	URLforGoodsTransportService: string | null;
+	URLforInvoiceTypeService: string | null;
+	ElectronicApprovalForGoodsTransEnabled: BoYesNoEnum | null;
+	ElectronicApprovalForInvoiceEnabled: BoYesNoEnum | null;
+	AllowInactiveItemsInInventoryOpeningBalance: BoYesNoEnum | null;
+	AllowInactiveItemsInInventoryCountingAndPosting: BoYesNoEnum | null;
+	AutoAssignNewBranchToBP: BoYesNoEnum | null;
+	DocumentRemarksInclude: DocumentRemarksIncludeTypeEnum | null;
+	CNPJOfIT: string | null;
+	CnPerson: string | null;
+	Email: string | null;
+	Telephone: string | null;
+	NoWarningForLinkTypeUDF: BoYesNoEnum | null;
+	EnableSameURLforPaymentTypeService: BoYesNoEnum | null;
+	CopyRefDocFormOrigDocToDupDoc: BoYesNoEnum | null;
+}

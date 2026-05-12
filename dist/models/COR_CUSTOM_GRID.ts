@@ -1,0 +1,41 @@
+import type { COR_CUSTOM_GRIDDESP } from "./COR_CUSTOM_GRIDDESP";
+import type { COR_CUSTOM_GRIDEFP } from "./COR_CUSTOM_GRIDEFP";
+import type { COR_CUSTOM_GRIDCOL } from "./COR_CUSTOM_GRIDCOL";
+
+export type COR_CUSTOM_GRID = {
+	Code: string;
+	Name: string | null;
+	DocEntry: number | null;
+	Canceled: string | null;
+	Object: string | null;
+	LogInst: number | null;
+	UserSign: number | null;
+	Transfered: string | null;
+	CreateDate: Date | null;
+	CreateTime: TimeOfDay | null;
+	UpdateDate: Date | null;
+	UpdateTime: TimeOfDay | null;
+	DataSource: string | null;
+	U_NameId: string | null;
+	U_Active: string | null;
+	U_FormTitle: string | null;
+	U_ParamSyntax: number | null;
+	U_OpenBy: number | null;
+	U_ParentForm: string | null;
+	U_ParentItem: string | null;
+	U_MenuName: string | null;
+	U_FormWidth: number | null;
+	U_FormHeight: number | null;
+	U_FormType: string | null;
+	U_DSType: number | null;
+	U_QueryId: string | null;
+	U_Query: string | null;
+	U_CollapseLevel: string | null;
+	U_WBNewLine: string | null;
+	U_RuleId: string | null;
+	U_Version: number | null;
+	U_AllowMultiSelect: string | null;
+	COR_CUSTOM_GRIDDESPCollection: COR_CUSTOM_GRIDDESP[] | null;
+	COR_CUSTOM_GRIDEFPCollection: COR_CUSTOM_GRIDEFP[] | null;
+	COR_CUSTOM_GRIDCOLCollection: COR_CUSTOM_GRIDCOL[] | null;
+}

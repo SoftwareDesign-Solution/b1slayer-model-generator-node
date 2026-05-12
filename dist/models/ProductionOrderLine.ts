@@ -1,0 +1,45 @@
+import type { BoIssueMethod } from "./BoIssueMethod";
+import type { ProductionItemType } from "./ProductionItemType";
+import type { ResourceAllocationEnum } from "./ResourceAllocationEnum";
+import type { SerialNumber } from "./SerialNumber";
+import type { BatchNumber } from "./BatchNumber";
+
+export type ProductionOrderLine = {
+	DocumentAbsoluteEntry: number | null;
+	LineNumber: number | null;
+	ItemNo: string | null;
+	BaseQuantity: number | null;
+	PlannedQuantity: number | null;
+	IssuedQuantity: number | null;
+	ProductionOrderIssueType: BoIssueMethod | null;
+	Warehouse: string | null;
+	VisualOrder: number | null;
+	DistributionRule: string | null;
+	LocationCode: number | null;
+	Project: string | null;
+	DistributionRule2: string | null;
+	DistributionRule3: string | null;
+	DistributionRule4: string | null;
+	DistributionRule5: string | null;
+	UoMEntry: number | null;
+	UoMCode: number | null;
+	WipAccount: string | null;
+	ItemType: ProductionItemType | null;
+	LineText: string | null;
+	AdditionalQuantity: number | null;
+	ResourceAllocation: ResourceAllocationEnum | null;
+	StartDate: Date | null;
+	EndDate: Date | null;
+	StageID: number | null;
+	RequiredDays: number | null;
+	ItemName: string | null;
+	WeightOfRecycledPlastic: number | null;
+	PlasticPackageExemptionReason: string | null;
+	U_GA_Charge: string | null;
+	U_GA_Lagerplatz: string | null;
+	U_GA_ProzentVerlust: number | null;
+	U_GA_GesamtEK: number | null;
+	U_GA_GesamtVK: number | null;
+	SerialNumbers: SerialNumber[] | null;
+	BatchNumbers: BatchNumber[] | null;
+}

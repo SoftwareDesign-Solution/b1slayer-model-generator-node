@@ -1,0 +1,48 @@
+import type { BoYesNoEnum } from "./BoYesNoEnum";
+import type { BoCpCardAcct } from "./BoCpCardAcct";
+import type { ChecksforPaymentLine } from "./ChecksforPaymentLine";
+import type { ChecksforPaymentPrintStatus } from "./ChecksforPaymentPrintStatus";
+import type { ChecksforPaymentDocumentReference } from "./ChecksforPaymentDocumentReference";
+
+export type ChecksforPayment = {
+	CheckKey: number;
+	CheckNumber: number | null;
+	BankCode: string | null;
+	Branch: string | null;
+	BankName: string | null;
+	CheckDate: Date | null;
+	AccountNumber: string | null;
+	Details: string | null;
+	JournalEntryReference: string | null;
+	PaymentDate: Date | null;
+	PaymentNo: number | null;
+	CheckAmount: number | null;
+	Transferable: BoYesNoEnum | null;
+	VendorCode: string | null;
+	CheckCurrency: string | null;
+	Canceled: BoYesNoEnum | null;
+	CardOrAccount: BoCpCardAcct | null;
+	Printed: BoYesNoEnum | null;
+	VendorName: string | null;
+	Signature: string | null;
+	CustomerAccountCode: string | null;
+	TransactionNumber: number | null;
+	Address: string | null;
+	CreateJournalEntry: BoYesNoEnum | null;
+	UpdateDate: Date | null;
+	CreationDate: Date | null;
+	TaxTotal: number | null;
+	TaxDate: Date | null;
+	DeductionRefundAmount: number | null;
+	PrintedBy: number | null;
+	CountryCode: string | null;
+	TotalinWords: string | null;
+	AddressName: string | null;
+	ManualCheck: BoYesNoEnum | null;
+	AttachmentEntry: number | null;
+	ECheck: BoYesNoEnum | null;
+	PrintConfirm: BoYesNoEnum | null;
+	ChecksforPaymentLines: ChecksforPaymentLine[] | null;
+	ChecksforPaymentPrintStatus: ChecksforPaymentPrintStatus[] | null;
+	ChecksforPaymentDocumentReferences: ChecksforPaymentDocumentReference[] | null;
+}

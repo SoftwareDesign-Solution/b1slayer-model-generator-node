@@ -1,0 +1,35 @@
+export type U_COR_CUSTOM_FIELD = {
+	Code: string;
+	Name: string | null;
+	U_RuleName: string | null;
+	U_Type: string | null;
+	U_Action: string | null;
+	U_Warning: string | null;
+	U_WarningText: string | null;
+	U_WarningBox: string | null;
+	U_WarningStatus: string | null;
+	U_Active: string | null;
+	U_FormTypeBasis: string | null;
+	U_ItemUIDBasis: string | null;
+	U_ColumnBasis: string | null;
+	U_FormType: string | null;
+	U_ItemUID: string | null;
+	U_Column: string | null;
+	U_EventType: string | null;
+	U_Before: string | null;
+	U_InnerEvent: string | null;
+	U_Mode: string | null;
+	U_Expression: string | null;
+	U_Refresh: string | null;
+	U_EasyFunctionRule: string | null;
+	U_ErrorBox: string | null;
+	U_ErrorStatus: string | null;
+	U_Dependency: string | null;
+	U_RuleId: string | null;
+	U_Version: number | null;
+	U_Creator: string | null;
+	U_LastModified: string | null;
+	U_LastModifiedBy: string | null;
+	U_Permission: string | null;
+	U_DeletedF: string | null;
+}
