@@ -1,8 +1,0 @@
-export type PMS_StageAttachement = {
-	AbsEntry: number | null;
-	LineID: number | null;
-	SourcePath: string | null;
-	FileName: string | null;
-	FileExtension: string | null;
-	AttachementDate: Date | null;
-}
